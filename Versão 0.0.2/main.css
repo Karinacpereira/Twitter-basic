@@ -1,0 +1,151 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(assets/capa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cabeçalho{
+  height: 80px;
+  width: 100%;
+  background-color: #00aced;
+  display: table;
+}
+
+.twitter{
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.icon-twitter{
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.fixo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.user{
+  width: 200px;
+  height: 150px;
+  background-color: ghostwhite;
+  border: 1px solid rgb(185, 181, 181);
+  border-radius: 10px;
+  opacity: 0.6;
+  align-items: center;
+}
+
+.icon-user{
+  font-size: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgb(100, 99, 99);
+}
+
+.user h2{
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+.user p{
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-weight: 700;
+}
+
+.input-user{
+  display: flex;
+  flex-direction: row;
+}
+
+#newTweet{
+  background-color: ghostwhite;
+  border: 1px solid rgb(185, 181, 181);
+  border-radius: 10px;
+  width: 500px;
+  height: 150px;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: #696969;
+}
+
+.comandos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button{
+  border-radius: 7px;
+  border-style: none;
+  background-color: #00aced;
+  font-size: 15px;
+  font-weight: 900;
+  color: #FFFFFF;
+  width: 80px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  align-self: flex-end;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+#caracteres{
+  color: #00aced;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 7px;
+  margin-right: 25px;
+}
+
+.timeline{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#feed{
+  background-color: ghostwhite;
+  border: 1px solid rgb(185, 181, 181);
+  border-radius: 10px;
+  opacity: 0.6;
+  width: 800px;
+  height: 300px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
