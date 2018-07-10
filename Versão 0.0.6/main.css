@@ -167,6 +167,9 @@ button{
 }
 
 .hora{
-  color: black;
+  color: #888888;
   font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
 }

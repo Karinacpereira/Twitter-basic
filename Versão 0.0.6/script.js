@@ -6,8 +6,12 @@ function postar(){
   var feed = document.createElement("p");
   feed.textContent = tweet;
   var post = document.getElementById("feed");
+  var dataTweet = document.createElement("span");
+  var horaPost = Date().split(" ")[4];
+  dataTweet.textContent = horaPost;
   post.appendChild(feed);
-  var dataTweet = horário();
+  feed.appendChild(dataTweet);
+  dataTweet.setAttribute("class", "hora");
   event.preventDefault();
   clear.value = "";
   document.getElementById("caracteres").innerHTML = máximo;
@@ -49,17 +53,17 @@ function size(){
     }
 }
 
-function horário(){
-  var date = new Date();
-  var hora = date.getHours();
-  var min = date.getMinutes();
-  var dia = date.getDay();
-  var mês = date.getMonth();
-  var ano = date.getFullYear();
+// function horário(){
+//   var date = new Date();
+//   var hora = date.getHours();
+//   var min = date.getMinutes();
+//   var dia = date.getDay();
+//   var mês = date.getMonth();
+//   var ano = date.getFullYear();
 
-  var dataTweet = document.createElement("span");
-  dataTweet.setAttribute("class", "hora");
-  dataTweet.textContent = hora + ":" + min + "   " + dia + "/" + mês + "/" + ano;
+//   var dataTweet = document.createElement("span");
+//   dataTweet.setAttribute("class", "hora");
+//   dataTweet.textContent = hora + ":" + min + "   " + dia + "/" + mês + "/" + ano;
 
-  return dataTweet;
-}
+//   return dataTweet;
+// }
