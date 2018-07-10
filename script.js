@@ -17,7 +17,7 @@ function postar(){
   document.getElementById("caracteres").innerHTML = máximo;
   document.getElementById("caracteres").style = "color: #00aced";
   document.getElementById("button").disabled = true;
-  newTweet.style.height = auto;
+  newTweet.rows = 5;
 }
 
   var máximo = document.getElementById("caracteres").innerHTML;
@@ -27,7 +27,7 @@ function postar(){
   var total = document.getElementById("caracteres").innerHTML = máximo - countChar;
   if(countChar >= 0 && countChar <=140){
     document.getElementById("button").disabled = false;
-  } if (newTweet.value.trim() == ""){
+  } if (newTweet.value.trim() == "" || newTweet.value.length > 140){
     document.getElementById("button").disabled = true;
   }
   if(total <= 30 && total > 20){
@@ -52,18 +52,3 @@ function size(){
     document.getElementById("newTweet").rows += 1;
     }
 }
-
-// function horário(){
-//   var date = new Date();
-//   var hora = date.getHours();
-//   var min = date.getMinutes();
-//   var dia = date.getDay();
-//   var mês = date.getMonth();
-//   var ano = date.getFullYear();
-
-//   var dataTweet = document.createElement("span");
-//   dataTweet.setAttribute("class", "hora");
-//   dataTweet.textContent = hora + ":" + min + "   " + dia + "/" + mês + "/" + ano;
-
-//   return dataTweet;
-// }
